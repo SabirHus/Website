@@ -1,0 +1,519 @@
+ /* Style the entire web page to adjust the box sizing */
+ * {
+ box-sizing: border-box;
+}
+
+/* Style the font for all the code in between the body tag */
+body {
+ font-family: Calibri;
+ text-align: center;
+ color: black;
+}
+
+/* Style the header */
+header{
+ padding: 18px;
+ margin:0;
+ border: solid;
+}
+
+/* Style the text in these tage changing the colours and adding shadows */
+i{
+ color: #9B0000;
+ font-weight: bold;
+}
+em{
+ color: #055819;
+ font-weight: bold;
+}
+b{
+ color: #7400FF;
+}
+strong{
+ color: #000000;
+}
+h1 {
+ text-shadow: 3px 3px white;
+ font-size: 35px
+ }
+
+/* Style the different headers on the webpages to specific colours */
+.homehead {
+  background-color: #00FFF7;
+ }
+.shoothead {
+  background-color: #FF0000;
+ }
+ .passhead {
+  background-color: #B900FF;
+ }
+.dribhead {
+  background-color: #00FF00;
+ }
+.defhead {
+  background-color: #FF00F0;
+ }
+.refhead {
+  background-color: #FF8B00;
+ }
+ 
+/* Style the navigation bar */
+nav {
+ overflow: hidden;
+ background-color: #FBFF00;
+ padding-left:38%;
+ border: 2px solid black;
+ border-radius: 5px;
+}
+
+/* Style the links in the navigation bar */
+nav a {
+ float: left;
+ color: black;
+ text-align: center;
+ padding: 15px 15px;
+ text-decoration: none;
+ font-size: 17px;
+}
+
+/* Style the links when hovering over them */
+nav a:hover {
+ background-color: #FF8B00;
+ color: black;
+}
+
+/* Style the links when you are actively on that webpage */
+nav a.active {
+ background-color: #0046FF;
+ color: white;
+}
+
+/* Style the aside box */
+aside {
+ float: right;
+ background-color: DodgerBlue;
+ color: #FFFFFF;
+ border: solid;
+
+}
+
+/* Style the article boxes */
+article{
+ float: left;
+ background-color: #f1f1f1;
+ border: solid;
+}
+
+/* Clear floats after the columns */
+section::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+/* Style the left side home artcicle box */
+.homeArticle1 {
+  width: 51%;
+  height: 700px;
+  font-size: 17px;
+}
+
+/* Style the home image box */
+.homeImg {
+  float: left;
+  width: 28%;
+  background: #ccc;
+  height: 320px;
+  border: solid;
+  object-fit: contain;
+}
+
+/* Creates the speed of zoom when hovering over the image */
+#zoom{
+  transition: transform .75s;
+}
+
+/* When hovering over image the image size will be enlarged */
+#zoom:hover{
+  transform: scale(1.75, 1.75);
+}
+
+/* Style the home page article box underneath the image */
+.homeArticle2 {
+  width: 28%;
+  height: 380px;
+  font-size: 17px;
+}
+
+/* Style the text in the span tag (last text of the homeArticle2 box) */
+.refrenceGuide{
+  background-color: #00FFF7;
+}
+
+/* Style the home page image box */
+.homeSide{
+  width: 21%;
+  height: 700px;
+  font-size: 17px;
+}
+
+/* Style the shooting page article on the top row */
+.shootArticle1 {
+  width: 70%;
+  height: 355px;
+  font-size: 17px;
+  background-color: #FFE800;
+}
+
+/* Style the shooting image box */
+.shootImg {
+  float: right;
+  width: 30%;
+  height: 355px;
+  background: #ccc;
+  border: solid;
+  object-fit: contain;
+}
+
+/* Style the shooting page article on the bottom left */
+.shootArticle2 {
+  width: 40%;
+  height: 345px;
+  padding: 5px;
+  border-right-style: dotted;
+}
+
+/* Style the shooting page article box on the bottom right */
+.shootArticle3 {
+  width: 60%;
+  height: 345px;
+  font-size: 17px;
+  border-left-style: dotted;
+}
+
+/* Style the passing page article boxes */
+.passArticle {
+  padding: 20px;
+  width: 50%;
+  height: 700px;
+  font-size: 17px;
+}
+
+/* Style the text in the span tag (third paragraph under the heading technique in passing page) */
+.passTech{
+  background-color: #B900FF;
+  color: white;
+  outline-style: dotted;
+  outline-color: black;
+}
+
+/* Style the dribbling page article on the left side */
+.dribArticle1 {
+  padding: 20px;
+  width: 50%;
+  height: 700px;
+}
+
+/* Style the dribbling page image box */
+.dribImg {
+  float: right;
+  width: 50%;
+  background: #ccc;
+  height: 350px;
+  border: solid;
+}
+
+/* Style the divs on the left side of the screen on the dribbling page changing the background colour(Specified which divs)*/
+div.dribFund, .tech, .psych, .phys{
+ box-shadow: 7px 7px darkgrey;
+}
+.dribFund{
+  background-color: #D8FF00;
+}
+.tech{
+  background-color: #B6FF00;
+}
+.psych{
+  background-color: #87FF00;
+}
+.phys{
+  background-color: #5DFF00;
+}
+
+/* Style the dribbling page article on the bottom right */
+.dribArticle2 {
+  width: 50%;
+  height: 350px;
+  font-size: 17px;
+}
+
+/* Style the defending page article on the top row */
+.defArticle1 {
+  width: 100%;
+  height: auto;
+  font-size: 17px;
+  background-color: #00FFFF;
+  padding: 10px;
+}
+
+/* Style the defending page article on the bottom left */
+.defArticle2 {
+  width: 70%;
+  height: 380px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+/* Style the defending page image box on the bottom right*/
+.defImg {
+  float: right;
+  width: 30%;
+  background: #ccc;
+  height: 380px;
+  border: solid;
+}
+
+/* Style the refrence page section */
+.refSection{
+  background-color: #f1f1f1;
+  border: solid;
+  font-size: 17px;
+}
+
+/* Style the refrence page table*/
+.reftable{
+  width: 100%;
+}
+
+/* Style the footer */
+footer{
+ padding: 10px;
+ margin:0;
+ border: solid;
+}
+
+/* Style the all the different web pages footer colour */
+.homefoot{
+  background-color: #00FFF7;
+}
+.shootfoot{
+  background-color: #FF0000;
+}
+.passfoot{
+  background-color: #B900FF;
+}
+.dribfoot{
+  background-color: #00FF00;
+}
+.deffoot{
+  background-color: #FF00F0;
+}
+.reffoot{
+  background-color: #FF8B00;
+}
+
+/* Style the table in the footer on the bottom left */
+.footTable{
+  border: 1px solid;
+  width: 10%;
+  display: inline-block;
+  float: left;
+}
+
+/* Style the table heading and the table data cell element */
+th, td{
+  border: 1px solid;
+  width: 10%;
+}
+
+/* Style the the text called "copyright2023" in the middle of the footer */
+.copyright{
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  display: inline-block;
+}
+
+/* Move the link called refrences to the right of the footer */
+.refrences{
+  float: right;
+  width: 10%;
+  display: inline-block;
+}
+
+/* Style the refrences link */
+.refrences a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Style the refrences link when hovering */
+.refrences a:hover {
+  background-color: #FF8B00;
+  color: black;
+}
+
+/* Style the refrences link to change colour when you are on the webpage */
+.refrences a.active {
+  background-color: #0046FF;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Media Queries for home page */ 
+@media only screen and (max-width: 599px) {
+  /* For mobile phone: */
+  .homeArticle1 {width: 100%;}
+  .homeSide {width: 100%; height: 500px;}
+  .homeImg {width: 100%;}
+  .homeArticle2 {width: 100%;}
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablets: */
+  .homeArticle1 {width: 100%;}
+  .homeImg {width: 50%; height: auto;}
+  .homeArticle2 {width: 50%; height: 600px;}
+  .homeSide {width: 100%; height: 500px;}
+}
+
+/* For Desktop sizes getting increasingly larger*/
+@media only screen and (min-width: 768px) {
+  /* desktop: */
+  .homeArticle1 {width: 51%; height: 1500px;}
+  .homeSide {width: 21%; height: 1500px;}
+  .homeImg {width: 28%; height: 320px;}
+  .homeArticle2 {width: 28%; height: 1180px;}
+}
+
+@media only screen and (min-width: 900px) {
+  /* desktop: */
+  .homeArticle1 {width: 51%; height: 1300px;}
+  .homeSide {width: 21%; height: 1300px;}
+  .homeImg {width: 28%; height: 420px;}
+  .homeArticle2 {width: 28%; height: 880px;}
+}
+
+@media only screen and (min-width: 1150px) {
+  /* desktop:*/
+  .homeArticle1 {width: 51%; height: 1050px;}
+  .homeSide {width: 21%; height: 1050px;}
+  .homeImg {width: 28%; height: 420px;}
+  .homeArticle2 {width: 28%; height: 630px;}
+}
+
+@media only screen and (min-width: 1500px) {
+  /* desktop: */
+  .homeArticle1 {width: 51%; height: 850px;}
+  .homeSide {width: 21%; height: 850px;}
+  .homeImg {width: 28%; height: 320px;}
+  .homeArticle2 {width: 28%; height: 530px;}
+}
+
+@media only screen and (min-width: 1800px) {
+  /* desktop:*/
+  .homeArticle1 {width: 51%; height: 720px;}
+  .homeSide {width: 21%; height: 720px;}
+  .homeImg {width: 28%; height: 320px;}
+  .homeArticle2 {width: 28%; height: 400px;}
+}
+
+/*Media Queries for shooting page */ 
+@media only screen and (max-width: 599px) {
+  /* For mobile phone: */
+  .shootArticle1 {width: 100%; height: auto;}
+  .shootImg {width: 100%; height :auto;}
+  .shootArticle2 {width: 100%; height: auto;}
+  .shootArticle3 {width: 100%; height: auto;}  
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablets: */
+  .shootArticle1 {width: 100%; height: auto;}
+  .shootImg {width: 50%; height: 355px;}
+  .shootArticle2 {width: 50%; height: auto;}
+  .shootArticle3 {width: 100%; height: auto;}  
+}
+
+/* For Desktop sizes getting increasingly larger*/
+@media only screen and (min-width: 768px) {
+  /* desktop: */
+  .shootArticle1 {width: 70%; height: auto;}
+  .shootImg {width: 30%; height: 355px;}
+  .shootArticle2 {width: 40%; height: auto;}
+  .shootArticle3 {width: 60%; height: auto;} 
+}
+
+@media only screen and (min-width: 1800px) {
+  /* desktop: */
+  .shootArticle1 {width: 70%; height: 355px;}
+  .shootImg {width: 30%; height: 355px;}
+  .shootArticle2 {width: 40%; height: 345px;}
+  .shootArticle3 {width: 60%; height: 345px;} 
+}
+
+/*Media Queries for passing page */ 
+@media only screen and (max-width: 767px) {
+  /* For mobile phone: and tablets*/
+  .passArticle {width: auto; height: auto;} 
+}
+
+/* For Desktop sizes getting increasingly larger*/
+@media only screen and (min-width: 768px) {
+  /* desktop: */
+  .passArticle {width: 50%; height: auto;}
+}
+
+@media only screen and (min-width: 1800px) {
+  /* desktop: */
+  .passArticle {width: 50%; height: 700px;}
+}
+
+/*Media Queries for dribbling page */ 
+@media only screen and (max-width: 599px) {
+  /* For mobile phone: */
+  .dribArticle1 {width: 100%; height: auto;}
+  .dribImg {width: 100%; height :auto;}
+  .dribArticle2 {width: 100%; height: auto;} 
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablets: and desktops */
+  .dribArticle1 {width: 50%; height: auto;}
+  .dribImg {width: 50%; height: 350px;}
+  .dribArticle2 {width: 50%; height: auto;}
+}
+
+@media only screen and (min-width: 1800px) {
+  /* desktop: */
+  .dribArticle1 {width: 50%; height: 700px;}
+  .dribImg {width: 50%; height: 350px;}
+  .dribArticle2 {width: 50%; height: 350px;}
+}
+
+/*Media Queries for defending page */ 
+@media only screen and (max-width: 599px) {
+  /* For mobile phone: */
+  .defImg {width: 100%; height :auto;}
+  .defArticle2 {width: 100%; height: auto;} 
+}
+
+@media only screen and (min-width: 600px) {
+  /* tablets: and desktops */
+  .defImg {width: 40%; height: 400px;}
+  .defArticle2 {width: 60%; height: auto;}
+}
+
+@media only screen and (min-width: 1800px) {
+  /* desktop: */
+  .defImg {width: 30%; height: 380px;}
+  .defArticle2 {width: 70%; height: 380px;}
+}
